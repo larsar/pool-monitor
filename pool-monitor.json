@@ -218,7 +218,7 @@
         "gtype": "gage",
         "title": "Akkurat nå",
         "label": "units",
-        "format": "{{value}}",
+        "format": "{{value | number:1 }}",
         "min": "15",
         "max": "25",
         "colors": [
@@ -226,10 +226,10 @@
             "#E6E600",
             "#00B500"
         ],
-        "seg1": "",
-        "seg2": "",
-        "x": 488.5,
-        "y": 731,
+        "seg1": "17",
+        "seg2": "19",
+        "x": 486.5,
+        "y": 732,
         "wires": []
     },
     {
