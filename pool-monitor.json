@@ -1,0 +1,63 @@
+[
+    {
+        "id": "570f53f1.492824",
+        "type": "ui_chart",
+        "z": "45c3df7c.b3b348",
+        "name": "",
+        "group": "e70daa48.de85a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatur",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1F77B4",
+            "#AEC7E8",
+            "#FF7F0E",
+            "#2CA02C",
+            "#98DF8A",
+            "#D62728",
+            "#FF9896",
+            "#9467BD",
+            "#C5B0D5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e70daa48.de85a",
+        "type": "ui_group",
+        "z": "",
+        "name": "30 dager",
+        "tab": "30e10a59.180006",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "30e10a59.180006",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Basseng",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
