@@ -1,34 +1,32 @@
 [
     {
-        "id": "8a827613.b0aca8",
+        "id": "3912702a.a517b8",
         "type": "tab",
         "label": "Temperatur",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "ceea47d1.1c4368",
+        "id": "11de07f9.80aee8",
         "type": "rpi-ds18b20",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "topic": "",
         "array": false,
         "name": "",
-        "x": 265.5,
-        "y": 995,
+        "x": 270,
+        "y": 1000,
         "wires": [
             [
-                "ae9601a8.92bae",
-                "88f7010a.235bb",
-                "e873222a.176918",
-                "8e84445d.d73498"
+                "f6e8a152.0792b",
+                "292b19c8.828a96"
             ]
         ]
     },
     {
-        "id": "d27be5b6.841d08",
+        "id": "961b5beb.3397e8",
         "type": "inject",
-        "z": "8a827613.b0aca8",
-        "name": "",
+        "z": "3912702a.a517b8",
+        "name": "Minutt",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -36,20 +34,20 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 77.5,
-        "y": 991,
+        "x": 60,
+        "y": 1000,
         "wires": [
             [
-                "ceea47d1.1c4368"
+                "11de07f9.80aee8"
             ]
         ]
     },
     {
-        "id": "27c73f6b.389438",
+        "id": "87d6270d.e1387",
         "type": "ui_chart",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "name": "",
-        "group": "c69a1174.137fd",
+        "group": "216dbbf4.35553c",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -80,18 +78,18 @@
         ],
         "useOldStyle": false,
         "outputs": 1,
-        "x": 475.5,
-        "y": 825,
+        "x": 470,
+        "y": 840,
         "wires": [
             []
         ]
     },
     {
-        "id": "ae9601a8.92bae",
+        "id": "f6e8a152.0792b",
         "type": "ui_chart",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "name": "",
-        "group": "c69a1174.137fd",
+        "group": "216dbbf4.35553c",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -122,18 +120,18 @@
         ],
         "useOldStyle": false,
         "outputs": 1,
-        "x": 473.5,
-        "y": 896,
+        "x": 550,
+        "y": 960,
         "wires": [
             []
         ]
     },
     {
-        "id": "88f7010a.235bb",
+        "id": "292b19c8.828a96",
         "type": "ui_chart",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "name": "",
-        "group": "c69a1174.137fd",
+        "group": "216dbbf4.35553c",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -164,17 +162,17 @@
         ],
         "useOldStyle": false,
         "outputs": 1,
-        "x": 474.5,
-        "y": 995,
+        "x": 550,
+        "y": 1040,
         "wires": [
             []
         ]
     },
     {
-        "id": "694d5a20.4cc8ac",
+        "id": "e9fceecc.118678",
         "type": "inject",
-        "z": "8a827613.b0aca8",
-        "name": "",
+        "z": "3912702a.a517b8",
+        "name": "Sekund",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -182,18 +180,18 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 73.5,
+        "x": 63.5,
         "y": 798,
         "wires": [
             [
-                "bdb9a8fc.d2fed8"
+                "b472d01e.fea058"
             ]
         ]
     },
     {
-        "id": "bdb9a8fc.d2fed8",
+        "id": "b472d01e.fea058",
         "type": "rpi-ds18b20",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "topic": "",
         "array": false,
         "name": "",
@@ -201,17 +199,17 @@
         "y": 798,
         "wires": [
             [
-                "27c73f6b.389438",
-                "fe066e6b.f5ad08"
+                "87d6270d.e1387",
+                "ae506772.7f7a5"
             ]
         ]
     },
     {
-        "id": "fe066e6b.f5ad08",
+        "id": "ae506772.7f7a5",
         "type": "ui_gauge",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "name": "",
-        "group": "c69a1174.137fd",
+        "group": "216dbbf4.35553c",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -228,16 +226,16 @@
         ],
         "seg1": "17",
         "seg2": "19",
-        "x": 486.5,
-        "y": 732,
+        "x": 490,
+        "y": 760,
         "wires": []
     },
     {
-        "id": "e873222a.176918",
+        "id": "4af1c3a0.981d14",
         "type": "ui_chart",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "name": "",
-        "group": "c69a1174.137fd",
+        "group": "216dbbf4.35553c",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -268,18 +266,20 @@
         ],
         "useOldStyle": false,
         "outputs": 1,
-        "x": 473.5,
-        "y": 1077,
+        "x": 570,
+        "y": 1200,
         "wires": [
-            []
+            [
+                "5aba438e.1c3a44"
+            ]
         ]
     },
     {
-        "id": "8e84445d.d73498",
+        "id": "f9d34043.4558c",
         "type": "ui_chart",
-        "z": "8a827613.b0aca8",
+        "z": "3912702a.a517b8",
         "name": "",
-        "group": "c69a1174.137fd",
+        "group": "216dbbf4.35553c",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -310,24 +310,117 @@
         ],
         "useOldStyle": false,
         "outputs": 1,
-        "x": 472.5,
-        "y": 1147,
+        "x": 570,
+        "y": 1260,
         "wires": [
-            []
+            [
+                "b20d15a0.2a6cc"
+            ]
         ]
     },
     {
-        "id": "c69a1174.137fd",
+        "id": "b20d15a0.2a6cc",
+        "type": "persist in",
+        "z": "3912702a.a517b8",
+        "name": "month",
+        "storageNode": "5ce27d23.2d802c",
+        "x": 710,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "45f6569f.892cc8",
+        "type": "persist out",
+        "z": "3912702a.a517b8",
+        "name": "month",
+        "storageNode": "5ce27d23.2d802c",
+        "x": 430,
+        "y": 1320,
+        "wires": [
+            [
+                "f9d34043.4558c"
+            ]
+        ]
+    },
+    {
+        "id": "5ba6df84.646148",
+        "type": "inject",
+        "z": "3912702a.a517b8",
+        "name": "Time",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 50,
+        "y": 1200,
+        "wires": [
+            [
+                "391f6ad.81f1716"
+            ]
+        ]
+    },
+    {
+        "id": "391f6ad.81f1716",
+        "type": "rpi-ds18b20",
+        "z": "3912702a.a517b8",
+        "topic": "",
+        "array": false,
+        "name": "",
+        "x": 270,
+        "y": 1200,
+        "wires": [
+            [
+                "f9d34043.4558c",
+                "4af1c3a0.981d14"
+            ]
+        ]
+    },
+    {
+        "id": "5aba438e.1c3a44",
+        "type": "persist in",
+        "z": "3912702a.a517b8",
+        "name": "week",
+        "storageNode": "5ce27d23.2d802c",
+        "x": 710,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "ef1ca531.a21f48",
+        "type": "persist out",
+        "z": "3912702a.a517b8",
+        "name": "week",
+        "storageNode": "5ce27d23.2d802c",
+        "x": 440,
+        "y": 1120,
+        "wires": [
+            [
+                "4af1c3a0.981d14"
+            ]
+        ]
+    },
+    {
+        "id": "216dbbf4.35553c",
         "type": "ui_group",
         "z": "",
         "name": "Temperatur",
-        "tab": "d007eebb.08e0e8",
+        "tab": "769bed8.24bf294",
         "disp": true,
         "width": "6",
         "collapse": false
     },
     {
-        "id": "d007eebb.08e0e8",
+        "id": "5ce27d23.2d802c",
+        "type": "persist-store",
+        "z": "",
+        "filename": "/data/chart-data.json",
+        "interval": "60"
+    },
+    {
+        "id": "769bed8.24bf294",
         "type": "ui_tab",
         "z": "",
         "name": "Basseng",
