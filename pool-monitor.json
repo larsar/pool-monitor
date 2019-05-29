@@ -1,15 +1,137 @@
 [
     {
-        "id": "3912702a.a517b8",
+        "id": "1ca19469.f24dcc",
         "type": "tab",
         "label": "Temperatur",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "11de07f9.80aee8",
+        "id": "4d199c9f.de467c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperatur",
+        "tab": "f695cd7e.c77ae8",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f41d7126.354058",
+        "type": "persist-store",
+        "z": "",
+        "filename": "/data/chart-data.json",
+        "interval": "60"
+    },
+    {
+        "id": "f695cd7e.c77ae8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Basseng",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "493331b6.e0cd18",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f55935b6.58e628",
         "type": "rpi-ds18b20",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "topic": "",
         "array": false,
         "name": "",
@@ -17,15 +139,14 @@
         "y": 1000,
         "wires": [
             [
-                "f6e8a152.0792b",
-                "292b19c8.828a96"
+                "b5b77c3a.d4434"
             ]
         ]
     },
     {
-        "id": "961b5beb.3397e8",
+        "id": "3c860a23.6089a6",
         "type": "inject",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "Minutt",
         "topic": "",
         "payload": "",
@@ -38,101 +159,17 @@
         "y": 1000,
         "wires": [
             [
-                "11de07f9.80aee8"
+                "f55935b6.58e628"
             ]
         ]
     },
     {
-        "id": "87d6270d.e1387",
+        "id": "b5b77c3a.d4434",
         "type": "ui_chart",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "",
-        "group": "216dbbf4.35553c",
+        "group": "4d199c9f.de467c",
         "order": 2,
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": "10",
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1F77B4",
-            "#AEC7E8",
-            "#FF7F0E",
-            "#2CA02C",
-            "#98DF8A",
-            "#D62728",
-            "#FF9896",
-            "#9467BD",
-            "#C5B0D5"
-        ],
-        "useOldStyle": false,
-        "outputs": 1,
-        "x": 470,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f6e8a152.0792b",
-        "type": "ui_chart",
-        "z": "3912702a.a517b8",
-        "name": "",
-        "group": "216dbbf4.35553c",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Time",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1F77B4",
-            "#AEC7E8",
-            "#FF7F0E",
-            "#2CA02C",
-            "#98DF8A",
-            "#D62728",
-            "#FF9896",
-            "#9467BD",
-            "#C5B0D5"
-        ],
-        "useOldStyle": false,
-        "outputs": 1,
-        "x": 550,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "292b19c8.828a96",
-        "type": "ui_chart",
-        "z": "3912702a.a517b8",
-        "name": "",
-        "group": "216dbbf4.35553c",
-        "order": 4,
         "width": 0,
         "height": 0,
         "label": "Døgn",
@@ -150,28 +187,28 @@
         "cutout": 0,
         "useOneColor": false,
         "colors": [
-            "#1F77B4",
-            "#AEC7E8",
-            "#FF7F0E",
-            "#2CA02C",
-            "#98DF8A",
-            "#D62728",
-            "#FF9896",
-            "#9467BD",
-            "#C5B0D5"
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
         ],
         "useOldStyle": false,
         "outputs": 1,
-        "x": 550,
-        "y": 1040,
+        "x": 530,
+        "y": 1000,
         "wires": [
             []
         ]
     },
     {
-        "id": "e9fceecc.118678",
+        "id": "78b8098a.c75038",
         "type": "inject",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "Sekund",
         "topic": "",
         "payload": "",
@@ -184,14 +221,14 @@
         "y": 798,
         "wires": [
             [
-                "b472d01e.fea058"
+                "a110d7a4.7fadd8"
             ]
         ]
     },
     {
-        "id": "b472d01e.fea058",
+        "id": "a110d7a4.7fadd8",
         "type": "rpi-ds18b20",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "topic": "",
         "array": false,
         "name": "",
@@ -199,44 +236,43 @@
         "y": 798,
         "wires": [
             [
-                "87d6270d.e1387",
-                "ae506772.7f7a5"
+                "edd07d7f.bad7a8"
             ]
         ]
     },
     {
-        "id": "ae506772.7f7a5",
+        "id": "edd07d7f.bad7a8",
         "type": "ui_gauge",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "",
-        "group": "216dbbf4.35553c",
+        "group": "4d199c9f.de467c",
         "order": 1,
         "width": 0,
         "height": 0,
         "gtype": "gage",
         "title": "Akkurat nå",
-        "label": "units",
+        "label": "grader",
         "format": "{{value | number:1 }}",
-        "min": "15",
+        "min": "12",
         "max": "25",
         "colors": [
-            "#CA3838",
-            "#E6E600",
-            "#00B500"
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
         ],
         "seg1": "17",
         "seg2": "19",
-        "x": 490,
-        "y": 760,
+        "x": 510,
+        "y": 800,
         "wires": []
     },
     {
-        "id": "4af1c3a0.981d14",
+        "id": "84e052a6.d3a948",
         "type": "ui_chart",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "",
-        "group": "216dbbf4.35553c",
-        "order": 4,
+        "group": "4d199c9f.de467c",
+        "order": 3,
         "width": 0,
         "height": 0,
         "label": "Uke",
@@ -254,15 +290,15 @@
         "cutout": 0,
         "useOneColor": false,
         "colors": [
-            "#1F77B4",
-            "#AEC7E8",
-            "#FF7F0E",
-            "#2CA02C",
-            "#98DF8A",
-            "#D62728",
-            "#FF9896",
-            "#9467BD",
-            "#C5B0D5"
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
         ],
         "useOldStyle": false,
         "outputs": 1,
@@ -270,23 +306,23 @@
         "y": 1200,
         "wires": [
             [
-                "5aba438e.1c3a44"
+                "e45526a2.4c6af"
             ]
         ]
     },
     {
-        "id": "f9d34043.4558c",
+        "id": "d8aca1b3.bbeb28",
         "type": "ui_chart",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "",
-        "group": "216dbbf4.35553c",
-        "order": 5,
+        "group": "4d199c9f.de467c",
+        "order": 4,
         "width": 0,
         "height": 0,
         "label": "Måned",
         "chartType": "line",
         "legend": "false",
-        "xformat": "dd HH:mm",
+        "xformat": "D/M",
         "interpolate": "linear",
         "nodata": "",
         "dot": false,
@@ -298,15 +334,15 @@
         "cutout": 0,
         "useOneColor": false,
         "colors": [
-            "#1F77B4",
-            "#AEC7E8",
-            "#FF7F0E",
-            "#2CA02C",
-            "#98DF8A",
-            "#D62728",
-            "#FF9896",
-            "#9467BD",
-            "#C5B0D5"
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
         ],
         "useOldStyle": false,
         "outputs": 1,
@@ -314,38 +350,38 @@
         "y": 1260,
         "wires": [
             [
-                "b20d15a0.2a6cc"
+                "71755c15.df079c"
             ]
         ]
     },
     {
-        "id": "b20d15a0.2a6cc",
+        "id": "71755c15.df079c",
         "type": "persist in",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "month",
-        "storageNode": "5ce27d23.2d802c",
+        "storageNode": "f41d7126.354058",
         "x": 710,
         "y": 1320,
         "wires": []
     },
     {
-        "id": "45f6569f.892cc8",
+        "id": "e1c12fd2.78a9b",
         "type": "persist out",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "month",
-        "storageNode": "5ce27d23.2d802c",
+        "storageNode": "f41d7126.354058",
         "x": 430,
         "y": 1320,
         "wires": [
             [
-                "f9d34043.4558c"
+                "d8aca1b3.bbeb28"
             ]
         ]
     },
     {
-        "id": "5ba6df84.646148",
+        "id": "7aeedb76.cc78b4",
         "type": "inject",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "Time",
         "topic": "",
         "payload": "",
@@ -358,14 +394,14 @@
         "y": 1200,
         "wires": [
             [
-                "391f6ad.81f1716"
+                "e3147823.ea512"
             ]
         ]
     },
     {
-        "id": "391f6ad.81f1716",
+        "id": "e3147823.ea512",
         "type": "rpi-ds18b20",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "topic": "",
         "array": false,
         "name": "",
@@ -373,59 +409,102 @@
         "y": 1200,
         "wires": [
             [
-                "f9d34043.4558c",
-                "4af1c3a0.981d14"
+                "d8aca1b3.bbeb28",
+                "84e052a6.d3a948",
+                "9be07fbb.02cd1"
             ]
         ]
     },
     {
-        "id": "5aba438e.1c3a44",
+        "id": "e45526a2.4c6af",
         "type": "persist in",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "week",
-        "storageNode": "5ce27d23.2d802c",
+        "storageNode": "f41d7126.354058",
         "x": 710,
         "y": 1120,
         "wires": []
     },
     {
-        "id": "ef1ca531.a21f48",
+        "id": "efd43de3.05193",
         "type": "persist out",
-        "z": "3912702a.a517b8",
+        "z": "1ca19469.f24dcc",
         "name": "week",
-        "storageNode": "5ce27d23.2d802c",
+        "storageNode": "f41d7126.354058",
         "x": 440,
         "y": 1120,
         "wires": [
             [
-                "4af1c3a0.981d14"
+                "84e052a6.d3a948"
             ]
         ]
     },
     {
-        "id": "216dbbf4.35553c",
-        "type": "ui_group",
-        "z": "",
-        "name": "Temperatur",
-        "tab": "769bed8.24bf294",
-        "disp": true,
-        "width": "6",
-        "collapse": false
+        "id": "9be07fbb.02cd1",
+        "type": "ui_chart",
+        "z": "1ca19469.f24dcc",
+        "name": "",
+        "group": "4d199c9f.de467c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Sesong",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "20",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 1440,
+        "wires": [
+            [
+                "e2b977fe.6368f8"
+            ]
+        ]
     },
     {
-        "id": "5ce27d23.2d802c",
-        "type": "persist-store",
-        "z": "",
-        "filename": "/data/chart-data.json",
-        "interval": "60"
+        "id": "e2b977fe.6368f8",
+        "type": "persist in",
+        "z": "1ca19469.f24dcc",
+        "name": "season",
+        "storageNode": "f41d7126.354058",
+        "x": 560,
+        "y": 1440,
+        "wires": []
     },
     {
-        "id": "769bed8.24bf294",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Basseng",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
+        "id": "34b0c076.909a1",
+        "type": "persist out",
+        "z": "1ca19469.f24dcc",
+        "name": "season",
+        "storageNode": "f41d7126.354058",
+        "x": 220,
+        "y": 1440,
+        "wires": [
+            [
+                "9be07fbb.02cd1"
+            ]
+        ]
     }
 ]
