@@ -451,7 +451,7 @@
         "label": "Sesong",
         "chartType": "line",
         "legend": "false",
-        "xformat": "HH:mm:ss",
+        "xformat": "D/M",
         "interpolate": "linear",
         "nodata": "",
         "dot": false,
@@ -489,7 +489,7 @@
         "z": "1ca19469.f24dcc",
         "name": "season",
         "storageNode": "f41d7126.354058",
-        "x": 560,
+        "x": 580,
         "y": 1440,
         "wires": []
     },
