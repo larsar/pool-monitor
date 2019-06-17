@@ -7,128 +7,6 @@
         "info": ""
     },
     {
-        "id": "4d199c9f.de467c",
-        "type": "ui_group",
-        "z": "",
-        "name": "Temperatur",
-        "tab": "f695cd7e.c77ae8",
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "f41d7126.354058",
-        "type": "persist-store",
-        "z": "",
-        "filename": "/data/chart-data.json",
-        "interval": "60"
-    },
-    {
-        "id": "f695cd7e.c77ae8",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Basseng",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "493331b6.e0cd18",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey"
-            }
-        },
-        "site": {
-            "name": "Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
         "id": "f55935b6.58e628",
         "type": "rpi-ds18b20",
         "z": "1ca19469.f24dcc",
@@ -139,7 +17,8 @@
         "y": 1000,
         "wires": [
             [
-                "b5b77c3a.d4434"
+                "b5b77c3a.d4434",
+                "edd07d7f.bad7a8"
             ]
         ]
     },
@@ -203,41 +82,6 @@
         "y": 1000,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "78b8098a.c75038",
-        "type": "inject",
-        "z": "1ca19469.f24dcc",
-        "name": "Sekund",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 63.5,
-        "y": 798,
-        "wires": [
-            [
-                "a110d7a4.7fadd8"
-            ]
-        ]
-    },
-    {
-        "id": "a110d7a4.7fadd8",
-        "type": "rpi-ds18b20",
-        "z": "1ca19469.f24dcc",
-        "topic": "",
-        "array": false,
-        "name": "",
-        "x": 265.5,
-        "y": 798,
-        "wires": [
-            [
-                "edd07d7f.bad7a8"
-            ]
         ]
     },
     {
@@ -506,5 +350,31 @@
                 "9be07fbb.02cd1"
             ]
         ]
+    },
+    {
+        "id": "4d199c9f.de467c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperatur",
+        "tab": "f695cd7e.c77ae8",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f41d7126.354058",
+        "type": "persist-store",
+        "z": "",
+        "filename": "/data/chart-data.json",
+        "interval": "60"
+    },
+    {
+        "id": "f695cd7e.c77ae8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Basseng",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     }
 ]
